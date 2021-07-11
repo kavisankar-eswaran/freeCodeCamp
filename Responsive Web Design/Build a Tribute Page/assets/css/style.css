@@ -1,0 +1,62 @@
+body{
+  background-image: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+}
+
+.main {
+  text-align: center;
+  margin-left: 20px;
+  border-top-width: 0px;
+  border-top-style: solid;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.image {
+  width: 50%;
+}
+
+.info {
+  text-align: left;
+  margin-left: 20px;
+  border-top-width: 0px;
+  border-top-style: solid;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.end {
+  text-align: center;
+  margin-left: 20px;
+  border-top-width: 0px;
+  border-top-style: solid;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.text{
+  color: grey;
+}
+
+.ending {
+  color: red;
+}
+
+.endclick {
+  color: blue;
+}
+
+h1, span, figcaption {
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+p, a {
+  font-family: 'Kanit', sans-serif;
+}
+
+ol {
+  font-family: 'Jomhuria', cursive;
+  font-family: 'Kanit', sans-serif;
+}
+
+h4 {
+  font-family: 'Bree Serif', serif;
+}
