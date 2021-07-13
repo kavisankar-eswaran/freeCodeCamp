@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Product Landing Page | freeCodeCamp</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <!--CSS Link-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <div>
+        <nav id="nav-bar">
+            <header class="topnav" id="header">
+             <img class="logo" id="header-img" src="https://i.ibb.co/d0DTpWF/1626154200218-1.png" alt="logo">            
+             <a class="nav-link" href="#form" >Registration</a>
+             <a class="nav-link" href="#pricing">Price</a>
+             <a class="nav-link" href="#video" >Courses</a>
+             <a class="nav-link" href="#Home" >Home</a>
+            </header>
+        </nav>
+    </div>
+    <!--Home-->
+    <div id="home" class="container">
+        <h1>Welcome to <span> KEeducation </span></h1>
+        <p>You can learn ! Practice !! We are help to your Placement</p>
+       <br>
+        <p class="red">In this platform is World’s Largest Online Paid E-Learning Platform Portal designed to achieve the three cardinal principles of Education Policy viz., Access, Equity and Quality by covering School/Vocational, Under-Graduate, Post Graduate, Engineering and Other Professional Courses.</p>
+    </div>
+    <hr>
+    <!--Video-->
+    <div><iframe id="video" height="315" src="https://www.youtube.com/embed/79brBsDpgrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="100%" allowfullscreen></iframe></div> 
+    <hr>
+    <!--Price-->
+    <div id="pricing" id="Price">
+            <div class="product" id="tenor">
+              <div class="level">WEb Development</div>
+              <h2>&#8377; 999</h2>
+              <ol>
+                <li>Front-end</li>
+                <li>Back-end</li>
+                <li>Database</li>
+                <li>Devops</li>
+              </ol>
+              <button class="btn">Choose</button>
+            </div>
+            <div class="product" id="bass">
+              <div class="level">Software Development</div>
+              <h2>&#8377; 899</h2>
+              <ol>
+                <li>APK Build</li>
+                <li>Figma, XD, Native</li>
+                <li>Database</li>
+                <li>Security</li>
+              </ol>
+              <button class="btn">Choose</button>
+            </div>
+            <div class="product" id="valve">
+              <div class="level">UI/UX Development</div>
+              <h2>&#8377; 1199</h2>
+              <ol>
+                <li>User Interface</li>
+                <li>User-experince</li>
+                <li>Design Pattern</li>
+                <li>Tools</li>
+              </ol>
+              <button class="btn">Choose</button>
+            </div>
+    </div>
+    <hr>
+    <!--Form-->
+    <div>
+        <div class="header">
+            <header>
+                <h1 id="title">How to become a Developer - Webinar</h1>
+                <p class="p1" id="description">E-Registration Form</p>
+            </header>
+        </div>
+        <!--Form-->
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <div class="form">
+                <!--name-->
+                <label class="head" for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control"
+                placeholder="Enter your full name"
+                required>
+                <!--Email-->           
+                <label class="head" for="email" id="email">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control"
+                placeholder="Enter your mail"
+                required>
+                <!--Age-->
+                <label class="head"  for="number" id="number-label">Age</label>
+                <input type="number" name="age" id="number" min="16" max="30" class="form-control" placeholder="age" required>
+                <!--role-->
+                <p class="head" >Your Current Role</p>
+                <select class="form-control" name="role" id="dropdown" required>
+                    <option disabled selected value="">Select any one</option>
+                    <option value="school-student">School Student</option>
+                    <option value="college-student">College Student</option>
+                    <option value="working-profession">Working Profession</option>
+                    <option value="self-employee">Self Employee</option>
+                </select>
+                <!--Time-->
+                <p class="head" >Select Your Session</p>
+                <div class="form-control">
+                    <label>
+                    <input type="radio" name="time" value="06:00AM-11:00AM" class="input-radio" checked />06:00AM-11:00AM</label> <hr>
+                    <label>
+                    <input type="radio" name="time" value="11:00AM-04:00PM" class="input-radio" checked />11:00AM-04:00PM</label> <hr>
+                    <label>
+                    <input type="radio" name="time" value="04:00PM-09:00PM" class="input-radio" checked />04:00PM-09:00PM</label>
+                </div>
+                <!--Language-->
+                <p class="head" >Choose language</p>
+                <select name="mostlike" id="most-like" class="form-control" required>
+                    <option disabled selected value>Select a language</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="English">English</option>
+                    <option value="German">German</option>
+                    <option value="French">French</option>
+                </select>
+                <!--Courses-->
+                <p class="head">What you Learn ?</p>
+                <div class="form-control">
+                  <label>
+                    <input name="prefer" value="Web-development" type="checkbox" class="input-checkbox"/>Web-development</label>
+                  <hr>
+                  <label>
+                    <input name="prefer" value="Software-developement" type="checkbox" class="input-checkbox"/>Software-developement</label> <hr>
+                  <label><input name="prefer" value="Ui/Ux-development" type="checkbox" class="input-checkbox"/>Ui/Ux-development</label>
+                </div>
+                <!--Queries-->
+                    <p class="head" >Any Queries ?</p>
+                    <textarea name="comment" id="comments" class="input-textarea" placeholder="Give your queries"></textarea>
+                <!--Button-->
+                <button type="submit" id="submit" class="submit-button">Register</button>        
+        </div>
+    </form>
+    <!--Footer-->
+        <div class="footer">
+            <p>Copyright ©  KEedu. All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
