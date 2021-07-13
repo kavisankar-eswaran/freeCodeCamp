@@ -1,0 +1,220 @@
+body{
+  margin: 5px 20px 5px 20px;
+  background-color:transparent;
+  text-align: center;
+  background-image: linear-gradient( rgb(163, 214, 96), yellow);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.topnav a {
+  font-family: 'Otomanopee One', sans-serif;
+  float: right;
+  color: #ffffff;
+  text-align: center;
+  padding: 32px 16px;
+  font-size: 27px;
+  text-decoration: solid;
+}
+
+span{
+  color: rgb(218, 70, 70)
+}
+ 
+p{
+  color: #ffecec;
+}
+
+.red{
+  color: rgb(204, 0, 255);
+}
+
+.topnav a:hover{
+  background-color: teal;
+}
+
+.topnav img {
+  float: left;
+  padding: 14px 16px;
+  width: 200px;
+}
+
+.container {
+  text-align: center;
+  background-color: transparent;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: l;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: gray;
+  color: white;
+  font-family: 'Encode Sans SC', sans-serif;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+  text-align: left;
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+.product > button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .product > button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .product > button :after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .product > button:hover {
+    padding-right: 25px;
+    color: rgb(42, 42, 22);
+    background-color: yellow;
+  }
+  
+  .product > button:hover:after {
+    opacity: 1;
+    right: 0;
+  }
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+ .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+header{
+  text-align: center;
+}
+
+form{
+  text-align: left;
+  margin: 50px 50px 50px 50px;
+  background-color: rgb(149, 148, 148);
+  border-radius: 5px;
+}
+
+.form-control, .input-textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 10px 30px 0px;
+  display: inline-block;
+  border: 6px solid #ccc;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: white;
+} 
+
+.head {
+  margin-left: 10px;
+}
+ 
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 10px 30px 0px;
+  display: inline-block;
+  border: 6px solid rgb(218, 70, 70);
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+} 
+
+.submit-button:hover {
+  border: 6px solid rgb(60, 228, 18);
+  background-color: lawngreen;
+  color: black;  
+} 
+
+h1 {
+  font-family: 'Encode Sans SC', sans-serif;
+  color: white;
+}
+
+.p1{
+  font-family: 'Encode Sans SC', sans-serif;
+  color: rgb(255, 163, 163);
+}
+
+label, p {
+  font-family: 'Anton', sans-serif;
+  font-family: 'Encode Sans SC', sans-serif;
+}
+
+input{
+  font-family: 'Inconsolata', monospace;
+}
+
+.footer {
+  padding: 1px 0 1px 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
