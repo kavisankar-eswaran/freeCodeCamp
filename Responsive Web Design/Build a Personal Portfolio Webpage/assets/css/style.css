@@ -1,0 +1,260 @@
+a {
+  color: #f4d12f;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #067830;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  justify-content: center;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background: #f4d12f;
+  color: black;
+}
+
+span{
+  color: #cf135b;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome-section > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: tomato;
+}
+
+.About_ME {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.About_ME > ul> li{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: rgb(53, 163, 236);
+}
+
+.Project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1572177812156-58036aae439c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.About_ME > ul> li{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: rgb(53, 163, 236);
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #303841;
+  border-top: 4px solid var(--main-red);
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #067830;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button>a {
+  color: #1f1f1f;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color: #1f1f1f;
+}
+
+.button:hover {
+  padding-right: 25px;
+  background-color: yellow;
+  color: #1f1f1f;
+}
+
+a:hover {
+ color: #1f1f1f;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  background-color: #303841;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 28.75em) {
+  .Contact {
+    justify-content: center;
+  }
+
+  .contact-list {
+    margin: 0 1rem;
+  }
+}
+
+.contact-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.contact-list a:hover {
+  background: #f4d12f;
+  color: black;
+}
+
+.footer{
+  text-align: center;
+  background-color: #303841;
+  padding: 5mm 0px 5mm 0;
+}
